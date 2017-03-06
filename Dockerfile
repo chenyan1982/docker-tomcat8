@@ -9,4 +9,4 @@ VOLUME "/opt/tomcat/webapps"
 WORKDIR /opt/tomcat
 
 # Launch Tomcat
-CMD ["/opt/tomcat/bin/catalina.sh", "run"]
+# CMD ["/opt/tomcat/bin/catalina.sh", "run"]
