@@ -1,12 +1,12 @@
 FROM tomcat:jre8
 
 # Add admin/admin user
-# ADD tomcat-users.xml /opt/tomcat/conf/
+ ADD tomcat-users.xml /usr/local/tomcat/conf/
 
-# EXPOSE 8080
+ EXPOSE 8080
 # EXPOSE 8009
-# VOLUME "/opt/tomcat/webapps"
-# WORKDIR /opt/tomcat
+ VOLUME "/usr/local/tomcat/webapps"
+ WORKDIR /usr/local/tomcat
 
 # Launch Tomcat
-# CMD ["/opt/tomcat/bin/catalina.sh", "run"]
+ CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]
