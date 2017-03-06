@@ -4,8 +4,8 @@ FROM tomcat:jre8
  ADD tomcat-users.xml /usr/local/tomcat/conf/
  
 # 增加mysql驱动
- ADD mysql-connector-java-6.0.5 /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/
- ADD mysql-connector-java-6.0.5 /usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/ 
+ ADD mysql-connector-java-6.0.5.jar /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/
+ ADD mysql-connector-java-6.0.5.jar /usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/ 
  
 
  EXPOSE 8080
